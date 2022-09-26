@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h1>@ViewBag.Name</h1>
+        <h2>@ViewData["Cgpa"]</h2>
+        <h4>Courses</h4>
+        <ul>
+            @foreach (var item in ViewBag.Courses)
+            {
+                <li>@item</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
