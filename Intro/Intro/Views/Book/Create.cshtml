@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+@if (Model != null)
+{
+    <h1>@Model.Title</h1>
+    <h1>@Model.Author</h1>
+}
+<h2>Create</h2>
+@Html.ValidationSummary()
+<form action="" method="post">
+    <input type="text" class="form-control" placeholder="Title" value="@(Model ==null ? "" : Model.Title)" name="Title" />
+    @Html.ValidationMessage("Title")
+    <input type="text" placeholder="Author" class="form-control" value="@(Model ==null ? "" : Model.Author)" name="Author" />
+    @Html.ValidationMessage("Author")
+    <input type="text" class="form-control" placeholder="Category" name="Category" />
+    <input type="text" class="form-control" placeholder="Publisher" name="Publisher" />
+    <input type="number" class="form-control" placeholder="Copy" name="Copy" />
+    <input type="password" class="form-control" placeholder="Password" name="Password" />
+    <input type="password" class="form-control" placeholder="Confirm Password" name="ConfPassword" />
+    <input type="submit" value="Add" />
+
+</form>
+
+
