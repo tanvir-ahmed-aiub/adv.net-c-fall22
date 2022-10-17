@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2a3136d1bb9b4776b97cf84a47c9eb0b" Name="Diagram1" ZoomLevel="115">
+        <EntityTypeShape EntityType="UMSFall22_cModel.Cours" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UMSFall22_cModel.CourseStudent" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UMSFall22_cModel.Department" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UMSFall22_cModel.Student" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="UMSFall22_cModel.FK_Courses_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="UMSFall22_cModel.FK_CourseStudents_Courses" ManuallyRouted="false" />
+        <AssociationConnector Association="UMSFall22_cModel.FK_CourseStudents_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="UMSFall22_cModel.FK_Students_Departments" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
