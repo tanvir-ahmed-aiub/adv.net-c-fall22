@@ -18,6 +18,7 @@ namespace Association.DB
         public UMSFall22_cEntities()
             : base("name=UMSFall22_cEntities")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

@@ -17,8 +17,9 @@ namespace Association.Controllers
             return View(db.Departments.ToList());
         }
         public ActionResult Details(int id) {
+            //return View(DepartmentRepo.Get());
             UMSFall22_cEntities db = new UMSFall22_cEntities();
-            var dept = (from d in db.Departments
+            var dept = (from d in db.Departments.Include("Students").Include("Courses")
                         where d.Id == id
                         select d).SingleOrDefault();
             //var courses = (from c in db.Courses

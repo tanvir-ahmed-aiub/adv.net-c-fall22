@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Association.DB.Department>
+﻿@model IEnumerable<Association.Models.StudentModel>
 
 @{
     ViewBag.Title = "Index";
@@ -14,8 +14,12 @@
         <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
-        <th>Courses</th>
-        <th>Students</th>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartmentId)
+        </th>
         <th></th>
     </tr>
 
@@ -24,8 +28,12 @@
         <td>
             @Html.DisplayFor(modelItem => item.Name)
         </td>
-        <td>@item.Courses.Count</td>
-        <td>@item.Students.Count</td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DepartmentId)
+        </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |
