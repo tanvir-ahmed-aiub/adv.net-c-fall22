@@ -1,4 +1,5 @@
-﻿using Association.Models;
+﻿using Association.AuthFilter;
+using Association.Models;
 using Association.Repo;
 using System;
 using System.Collections.Generic;
@@ -8,9 +9,11 @@ using System.Web.Mvc;
 
 namespace Association.Controllers
 {
+    [Logged]
     public class StudentController : Controller
     {
         // GET: Student
+        
         public ActionResult Index()
         {
 

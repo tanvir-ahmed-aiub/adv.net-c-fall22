@@ -18,7 +18,6 @@ namespace Association.DB
         public UMSFall22_cEntities()
             : base("name=UMSFall22_cEntities")
         {
-            this.Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -30,5 +29,6 @@ namespace Association.DB
         public DbSet<CourseStudent> CourseStudents { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Student> Students { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

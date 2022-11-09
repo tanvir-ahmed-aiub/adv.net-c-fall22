@@ -13,6 +13,7 @@
         <AssociationConnector Association="UMSFall22_cModel.FK_CourseStudents_Courses" ManuallyRouted="false" />
         <AssociationConnector Association="UMSFall22_cModel.FK_CourseStudents_Students" ManuallyRouted="false" />
         <AssociationConnector Association="UMSFall22_cModel.FK_Students_Departments" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="UMSFall22_cModel.User" Width="1.5" PointX="5.375" PointY="5.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
