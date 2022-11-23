@@ -1,0 +1,55 @@
+<script>
+	function load(){
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange=function(){
+			if(this.readyState==4 && this.status==200){
+				var response = this.responseText;
+				var arr = JSON.parse(response);
+				var output="";
+				for(var i=0;i<arr.length;i++){
+					output += "<li>"+arr[i].Name+"</li>";
+				}
+				document.getElementById("output").innerHTML = output;
+
+			}
+		};
+		xhr.open("GET","https://localhost:44345/api/donors",true);
+		//xhr.setRequestHeader("Authorization", "614ebafa-5387-4b0d-9d01-1712ede04d40");
+		xhr.send();
+	}
+	function gete(id){
+		return document.getElementById(id);
+	}
+	
+	function login(e){
+		e.preventDefault();
+		var uname = gete("uname").value;
+		var pass = gete("pass").value;
+		var obj = {Username:uname, Password:pass};
+		//alert(uname+" "+pass);
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange=function(){
+			if(this.readyState==4 && this.status==200){
+				var response = this.responseText;
+				debugger;
+			}
+		};
+		xhr.open("post","https://localhost:44345/api/login",true);
+		xhr.setRequestHeader("Content-type", "application/json");
+		xhr.send(JSON.stringify(obj));
+		
+		
+	}
+</script>
+
+<html>
+	<body>
+		<ul id="output"></ul>
+		<button onclick="load()">Click Me</button>
+		<form onsubmit="login(event)"> 
+			<input type="text" id="uname"></br>
+			<input type="password" id="pass"></br>
+			<input type="submit" value="login">
+		</form>
+	</body>
+</html>
