@@ -1,4 +1,5 @@
-﻿using DAL.EF;
+﻿using DAL.EFCodeFirst;
+using DAL.EFCodeFirst.Models;
 using DAL.Interfaces;
 using System;
 using System.Collections.Generic;

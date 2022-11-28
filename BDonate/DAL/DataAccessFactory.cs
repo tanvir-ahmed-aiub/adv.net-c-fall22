@@ -11,7 +11,7 @@ namespace DAL
 {
     public class DataAccessFactory
     {
-        public static IRepo<Donor, int, Donor> DonorDataAccess() {
+        public static IRepo<DAL.EFCodeFirst.Models.Donor, int, DAL.EFCodeFirst.Models.Donor> DonorDataAccess() {
             return new DonorRepo();
         }
         public static IRepo<User, string, User> UserDataAccess() {

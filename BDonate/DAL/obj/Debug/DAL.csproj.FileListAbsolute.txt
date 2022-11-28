@@ -8,3 +8,7 @@ C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Debug\DAL.csproj.CoreCompil
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Debug\DAL.dll
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Debug\DAL.pdb
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Debug\DAL.Migrations.PrevTableCreated.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

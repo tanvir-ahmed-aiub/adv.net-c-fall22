@@ -14,7 +14,7 @@ namespace BDonate.Controllers
     [EnableCors("*","*","*")]
     public class DonorController : ApiController
     {
-        [Logged]
+        //[Logged]
         [HttpGet]
         [Route("api/donors")]
         public HttpResponseMessage Get()

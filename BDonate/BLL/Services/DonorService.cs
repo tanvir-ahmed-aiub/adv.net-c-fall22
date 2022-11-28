@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using BLL.DTOs;
 using DAL;
-using DAL.EF;
+using DAL.EFCodeFirst.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

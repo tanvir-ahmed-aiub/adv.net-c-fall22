@@ -77,3 +77,5 @@ C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BDonate\obj\Debug\BDonate.pdb
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BDonate\bin\System.Web.Cors.dll
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BDonate\bin\System.Web.Http.Cors.dll
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BDonate\bin\System.Web.Http.Cors.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BDonate\bin\EntityFramework.SqlServer.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BDonate\bin\EntityFramework.SqlServer.xml
