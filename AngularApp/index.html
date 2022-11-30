@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script>
+            var app = angular.module("my-app",[]);
+            app.factory('interceptor',[function(){
+                var interceptor = {
+                    request:function(config){
+                        config.headers.Authorization="ABCD";
+                        //config.headers.Authorization=localStorage.getItem("_token");
+                        //console.log("I am requesting to server");
+                        debugger;
+                        return config;
+                    },
+                    response:function(config){
+                        console.log("I am responding from server");
+                        return config;
+                    }
+                };
+                return interceptor;
+            }]);
+
+            app.config(function($httpProvider){
+                $httpProvider.interceptors.push('interceptor');
+            });
+
+
+            app.controller('fctrl',function($scope){
+                var i=13;
+                $scope.c = i +12;
+                $scope.course = "adv.net";
+            });
+
+            app.controller('sctrl',function($scope){
+                $scope.cars = ["BMW","Toyota","Tata"];
+            });
+
+            app.controller('loginCtrl',function($scope){
+                $scope.login=function(){
+                    alert($scope.uname);
+                };
+
+            });
+            app.controller('hotelistCtrl',function($scope,$http){
+                $http.get("https://localhost:44383/api/hotels").then(function(resp){
+                    $scope.hotels = resp.data;
+                },function(err){
+                    debugger;
+                });
+            });
+            app.controller('hotelAddCtrl',function($scope,$http){
+                $scope.createHotel = function(){
+                    var data = {Name:$scope.name, Address:$scope.add};
+                    $http.post("https://localhost:44383/api/hotels/add",data).then(function(resp){
+                        //localStorage.setItem("_token","ABCD");
+                        //localStorage.getItem("_token");
+                        
+                        //logout
+                        //localStorage.removeItem("_token");
+                        debugger;
+                    },function(err){
+                        debugger;
+                    })
+                };
+            });
+
+        </script>
+    </head>
+    <body ng-app="my-app">
+        <input type="text" ng-model="name">
+        <p>{{name}}</p>
+
+        <div ng-controller="fctrl">
+            <p>{{course}} {{c}}</p>
+        </div>
+        {{course}}
+        <div>{{course}}</div>
+        <div ng-controller="sctrl">
+            <ul>
+                <li ng-repeat="c in cars">{{c}}</li>
+            </ul>
+        </div>
+        <div ng-controller="loginCtrl">
+            <form ng-submit="login()">
+                <input type="text" ng-model="uname"><br>
+                <input type="password" ng-model="pass"> <br>
+                <input type="submit">
+            </form>
+        </div>
+        <div ng-controller="hotelistCtrl">
+            <table border="1" style="border-collapse:collapse">
+                <tr ng-repeat="h in hotels">
+                    <td>{{h.Id}}</td>
+                    <td>{{h.Name}}</td>
+                    <td>{{h.Address}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div ng-controller="hotelAddCtrl">
+            <form  ng-submit="createHotel()">
+                <input type="text" ng-model="name"> <br>
+                <input type="text" ng-model="add" ><br>
+                <input type="submit" >
+            </form>
+        </div>
+    </body>
+</html>

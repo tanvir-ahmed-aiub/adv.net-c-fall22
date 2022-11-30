@@ -13,6 +13,7 @@ namespace BLL.Services
     public class DonorService
     {
         public static List<DonorDTO> Get() {
+            //return new List<DonorDTO>();
             var data = DataAccessFactory.DonorDataAccess().Get();
             var config = new MapperConfiguration(cfg => {
                 cfg.CreateMap<Donor, DonorDTO>();

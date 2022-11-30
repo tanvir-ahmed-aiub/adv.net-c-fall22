@@ -1,0 +1,14 @@
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\bin\Release\BLL.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\bin\Release\BLL.pdb
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\bin\Release\AutoMapper.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\bin\Release\DAL.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\bin\Release\EntityFramework.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\bin\Release\DAL.pdb
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\bin\Release\DAL.dll.config
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\bin\Release\AutoMapper.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\bin\Release\EntityFramework.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\obj\Release\BLL.csproj.AssemblyReference.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\obj\Release\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\obj\Release\BLL.csproj.CopyComplete
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\obj\Release\BLL.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\BLL\obj\Release\BLL.pdb

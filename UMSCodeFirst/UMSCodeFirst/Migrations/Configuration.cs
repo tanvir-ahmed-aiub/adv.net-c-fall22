@@ -36,8 +36,20 @@
 
                 }); ;
             }
+            List<Course> courses = new List<Course>();
+            for (int i = 1; i <= 500; i++)
+            {
+                courses.Add(new Course()
+                {
+                    Id = i,
+                    Name = Guid.NewGuid().ToString().Substring(0, 5),
+                    DId = random.Next(1, 4)
+                });
+            }
             context.Departments.AddOrUpdate(depts.ToArray());
             context.Students.AddOrUpdate(students.ToArray());
+            context.Courses.AddOrUpdate(courses.ToArray());
+            
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method

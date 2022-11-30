@@ -32,6 +32,13 @@ namespace DAL.Repos
 
         public List<Donor> Get()
         {
+            //List<Donor> list = new List<Donor>();
+            //list.Add(new Donor() { 
+            //    Id=1,
+            //    Name="Tanvir",
+            //    GrpId=2
+            //});
+            //return list;
             return db.Donors.ToList();
         }
 

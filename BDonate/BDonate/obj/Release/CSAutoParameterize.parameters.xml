@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="BloodDonateEntities-Web.config Connection String" description="BloodDonateEntities Connection String used in web.config by the application to access the database." defaultValue="data source=dotnetserver2.database.windows.net;Initial Catalog=BDonate;User ID=tanvir;Password=dotnetserverA1;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Tanvir\ Ahmed\\Desktop\\\.NET\\C\\BDonate\\BDonate\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BloodDonateEntities']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,14 @@
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\bin\Release\DAL.dll.config
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\bin\Release\DAL.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\bin\Release\DAL.pdb
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\bin\Release\EntityFramework.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\bin\Release\EntityFramework.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Release\DAL.csproj.AssemblyReference.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Release\DAL.Migrations.PrevTableCreated.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Release\DAL.csproj.GenerateResource.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Release\DAL.csproj.CopyComplete
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Release\DAL.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\BDonate\DAL\obj\Release\DAL.pdb

@@ -19,8 +19,15 @@ namespace BDonate.Controllers
         [Route("api/donors")]
         public HttpResponseMessage Get()
         {
-            var data = DonorService.Get();
-            return Request.CreateResponse(HttpStatusCode.OK, data);
+            try
+            {
+                var data = DonorService.Get().Take(10);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }catch(Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+            
         }
         [HttpGet]
         [Route("api/donors/{id}")]

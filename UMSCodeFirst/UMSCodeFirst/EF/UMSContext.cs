@@ -9,9 +9,10 @@ namespace UMSCodeFirst.EF
 {
     public class UMSContext: DbContext
     {
-        //public UMSContext() : base("dgfd") { 
-        
-        //}
+        public UMSContext() 
+        {
+            this.Configuration.LazyLoadingEnabled = false;
+        }
         public DbSet<Student> Students { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Course> Courses { get; set; }
