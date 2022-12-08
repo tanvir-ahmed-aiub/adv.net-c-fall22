@@ -26,6 +26,7 @@ namespace TourismManagement.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);  
             }
         }
+
         [Route("api/hotels/add")]
         [HttpPost]
         public HttpResponseMessage Add(HotelDTO hotel)
@@ -43,6 +44,31 @@ namespace TourismManagement.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
             }
         }
-        
+        [Route("api/hotels/{id}")]
+        [HttpGet]
+        public HttpResponseMessage Get(int id)
+        {
+            try
+            {
+                return Request.CreateResponse(HttpStatusCode.OK,HotelService.Get(id));
+            }
+            catch (Exception ex) {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+        [Route("api/hotels/{id}/rooms")]
+        [HttpGet]
+        public HttpResponseMessage GetwithRooms(int id)
+        {
+            try
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, HotelService.GetwithRoom(id));
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
     }
 }

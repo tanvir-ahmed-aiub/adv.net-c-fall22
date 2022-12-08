@@ -14,6 +14,11 @@ namespace BDonate.Controllers
     [EnableCors("*","*","*")]
     public class DonorController : ApiController
     {
+        [Route("api/hello")]
+        [HttpGet]
+        public HttpResponseMessage Hello() { 
+            return Request.CreateResponse(HttpStatusCode.OK,"Hello");
+        }
         //[Logged]
         [HttpGet]
         [Route("api/donors")]
@@ -21,7 +26,7 @@ namespace BDonate.Controllers
         {
             try
             {
-                var data = DonorService.Get().Take(10);
+                var data = DonorService.Get();
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }catch(Exception ex)
             {

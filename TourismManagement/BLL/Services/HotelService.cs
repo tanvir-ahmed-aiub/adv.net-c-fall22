@@ -16,6 +16,7 @@ namespace BLL.Services
             var data = DataAccessFactory.HotelDataAccess().Get();
             var cfg = new MapperConfiguration(c => {
                 c.CreateMap<Hotel, HotelDTO>();
+                
             });
             var mapper = new Mapper(cfg);
             return mapper.Map<List<HotelDTO>>(data);
@@ -25,6 +26,7 @@ namespace BLL.Services
             var data = DataAccessFactory.HotelDataAccess().Get(id);
             var cfg = new MapperConfiguration(c => {
                 c.CreateMap<Hotel, HotelDTO>();
+                
             });
             var mapper = new Mapper(cfg);
             return mapper.Map<HotelDTO>(data);
@@ -41,6 +43,16 @@ namespace BLL.Services
             
             if(data != null) return mapper.Map<HotelDTO>(data);
             return null;    
+        }
+        public static HotelRoomDTO GetwithRoom(int id) {
+            var data = DataAccessFactory.HotelDataAccess().Get(id);
+            var cfg = new MapperConfiguration(c => {
+                c.CreateMap<Hotel, HotelRoomDTO>();
+                c.CreateMap<Room, RoomDTO>();
+
+            });
+            var mapper = new Mapper(cfg);
+            return mapper.Map<HotelRoomDTO>(data);
         }
     }
 }
